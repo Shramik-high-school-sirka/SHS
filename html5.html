@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I/T & Computer Studies - Your School Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('th.jpg'); /* Update the path as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color:;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background: url('#.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(98, 245, 93, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.container {
+    background-image: url('bg1.jpg'); 
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.courses-grid, .facilities-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course, .facility, .project {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.course h3, .facility h3, .project h3 {
+    margin-top: 0;
+}
+footer {
+    background-color: #04930f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+nav {
+            background-color: rgba(25, 25, 112, 0.9);
+            padding: 10px;
+            position: absolute; /* Positioning it in the top left corner */
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            border-radius: 5px;
+            z-index: 1000; /* Keep on top */
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(40, 106, 163);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+            white-space: nowrap;
+            width: 200px; 
+            opacity: 0; 
+            transition: opacity 0.3s ease, visibility 0.3s ease; 
+            visibility: hidden; 
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: lightgray;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block; 
+            opacity: 1; 
+            visibility: visible; 
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: indigo;
+        }
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+        .close {
+            color: #c37c7c;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <a href="javascript:void(0)">Menu</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="html.html">About Us</a>
+                    <a href="html1.html">Academics</a>
+                    <a href="html2.html">Admissions</a>
+                    <a href="html3.html">Student Life</a>
+                    <a href="html4.html">Gallery</a>
+                    <a href="html5.html">IT & Computer Studies</a>
+                    <a href="html6.html">Ideal Students</a>
+                    <a href="html7.html">Resources</a>
+                    <a href="html8.html">News & Updates</a>
+                    <a href="html9.html">Social Media</a>
+                    <a href="html10.html">Contact Us</a>
+                </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>I/T & Computer Studies</h1>
+            <p>Empowering the next generation of tech leaders.</p>
+        </div>
+    </section>
+
+    <section id="program-overview" class="container">
+        <h2>Program Overview</h2>
+        <p>Our I/T & Computer Studies program offers a comprehensive curriculum designed to provide students with the skills and knowledge necessary to excel in the technology industry. From foundational courses to advanced topics, we prepare students for future success.</p>
+    </section>
+
+    <section id="courses" class="container">
+        <h2>Courses Offered</h2>
+        <div class="courses-grid">
+            <div class="course">
+                <h3>Introduction to Programming</h3>
+                <p>Learn the basics of programming using Python. This course covers fundamental concepts and problem-solving techniques.</p>
+            </div>
+            <div class="course">
+                <h3>Web Development</h3>
+                <p>Explore HTML, CSS, and JavaScript to create dynamic and responsive websites.</p>
+            </div>
+            <div class="course">
+                <h3>Data Structures & Algorithms</h3>
+                <p>Understand the core data structures and algorithms essential for efficient programming.</p>
+            </div>
+            <div class="course">
+                <h3>Database Management</h3>
+                <p>Learn about database design, SQL, and data management best practices.</p>
+            </div>
+            <!-- Add more courses as needed -->
+        </div>
+    </section>
+
+    <section id="facilities" class="container">
+        <h2>Our Facilities</h2>
+        <p>Our state-of-the-art facilities provide students with the resources they need to succeed. We offer modern computer labs, collaborative workspaces, and access to the latest software and hardware.</p>
+        <div class="facilities-grid">
+            <div class="facility">
+                <img src="path/to/lab-image.jpg" alt="Computer Lab">
+                <h3>Computer Labs</h3>
+                <p>Fully equipped with the latest computers and software for hands-on learning.</p>
+            </div>
+            <div class="facility">
+                <img src="path/to/workspace-image.jpg" alt="Collaborative Workspace">
+                <h3>Collaborative Workspaces</h3>
+                <p>Designed to foster teamwork and innovation, our collaborative spaces are perfect for group projects.</p>
+            </div>
+            <!-- Add more facilities as needed -->
+        </div>
+    </section>
+
+    <section id="industrial visit" class="container">
+        <h2>industrial visit</h2>
+        <body>
+                <img src="2.jpg" alt="" width="250" height="250">
+                <img src="4.jpg" alt="" width="250" height="250">
+                <img src="5.jpg" alt="" width="250" height="250">
+                <img src="6..jpg" alt="" width="250" height="250">
+                <img src="8.jpg" alt="" width="250" height="250">
+                <img src="9.jpg" alt="" width="250" height="250">
+                <img src="10.jpg" alt="" width="250" height="250">
+                <img src="11.jpg" alt="" width="250" height="250">
+            </body>
+        
+            <section id="industrial visit" class="container">
+                <h2>OJT (On Job Taining)</h2>
+                <body>
+                        <img src="1.jpg" alt="" width="250" height="250">
+                        <img src="3.jpg" alt="" width="250" height="250">
+                        <img src="7.jpg" alt="" width="250" height="250">
+                    </body>
+                    <section id="industrial visit" class="container">
+                        <h2>Gest lectures</h2>
+                        <body>
+                                <img src="12.jpg" alt="" width="250" height="250">
+                                <img src="13.jpg" alt="" width="250" height="250">
+                                <img src="14.jpg" alt="" width="250" height="250">
+                                <img src="15.jpg" alt="" width="250" height="250">
+                                <img src="16.jpg" alt="" width="250" height="250">
+                                <img src="17.jpg" alt="" width="250" height="250">
+                            </body>
+                                
+    <script>
+        window.onload = function() {
+            alert("Welcome to Shramik +2 High School! We're glad to have you here.");
+        };
+
+        // Modal functionality
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("infoButton");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Your School Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

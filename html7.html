@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Your School Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General styles */
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+       background-image: url("th.jpg");
+        
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header {
+        background-color: #333;
+        /* Example header background color */
+        color: #fff;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav {
+        /* Your navigation styles */
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        color: #007bff;
+        /* Example link color */
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Section-specific styles */
+
+    .resources,
+    .tools {
+        background-color: #fff;
+        /* Example section background color */
+        padding: 40px 0;
+    }
+
+    .resources h2,
+    .tools h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .resources ul,
+    .tools ul {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .resources ul li,
+    .tools ul li {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        background-color: rgba(25, 25, 112, 0.9);
+        padding: 10px;
+        position: absolute;
+        /* Positioning it in the top left corner */
+        top: 10px;
+        /* Adjust as needed */
+        left: 10px;
+        /* Adjust as needed */
+        border-radius: 5px;
+        z-index: 1000;
+        /* Keep on top */
+    }
+
+    nav a {
+        margin: 0 15px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(40, 106, 163);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        text-align: left;
+        white-space: nowrap;
+        width: 200px;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        visibility: hidden;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: lightgray;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    section {
+        padding: 40px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: indigo;
+    }
+
+    /* Modal styles */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1000;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <a href="javascript:void(0)">Menu</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="html.html">About Us</a>
+                    <a href="html1.html">Academics</a>
+                    <a href="html2.html">Admissions</a>
+                    <a href="html3.html">Student Life</a>
+                    <a href="html4.html">Gallery</a>
+                    <a href="html5.html">IT & Computer Studies</a>
+                    <a href="html6.html">Ideal Students</a>
+                    <a href="html7.html">Resources</a>
+                    <a href="html8.html">News & Updates</a>
+                    <a href="html9.html">Social Media</a>
+                    <a href="html10.html">Contact Us</a>
+                </div>
+        </nav>
+
+        <div class="container">
+            <h1>Resources</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="resources">
+            <div class="container">
+                <h2>Useful Links and Documents</h2>
+                <ul>
+                    <li><a href="path/to/document1.pdf" target="_blank">Document 1</a> - Description of document</li>
+                    <li><a href="path/to/document2.pdf" target="_blank">Document 2</a> - Description of document</li>
+                    <li><a href="path/to/external-link" target="_blank">External Link</a> - Description of resource</li>
+                    <!-- Add more items as needed -->
+                </ul>
+            </div>
+        </section>
+
+        <section class="tools">
+            <div class="container">
+                <h2>Online Tools</h2>
+                <ul>
+                    <li><a href="https://chatgpt.com/" target="_blank">Chat GPT</a>want to ask anything realated to study so ask here with chat GPT</li>
+                    <li><a href="https://gemini.google.com/app" target="_blank">Gemini</a> to generate any picture or background so try this tool gimini </li>
+                    <!-- Add more items as needed -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact us at: <a href="mailto:amanat0987ali@gmail.com">info@yourschool.edu</a> | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+    
+    <script>
+        window.onload = function() {
+            alert("Welcome to Shramik +2 High School! We're glad to have you here.");
+        };
+
+        // Modal functionality
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("infoButton");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
