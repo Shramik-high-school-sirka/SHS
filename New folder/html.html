@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Shramik +2 High School Sirka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('th.jpg'); /* Update the path as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    color: rgb(247, 247, 247);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.team-member p {
+    margin: 0;
+    color: #777;
+}
+nav {
+            background-color: rgba(25, 25, 112, 0.9);
+            padding: 10px;
+            position: absolute; /* Positioning it in the top left corner */
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            border-radius: 5px;
+            z-index: 1000; /* Keep on top */
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(40, 106, 163);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+            white-space: nowrap;
+            width: 200px; 
+            opacity: 0; 
+            transition: opacity 0.3s ease, visibility 0.3s ease; 
+            visibility: hidden; 
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: lightgray;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block; 
+            opacity: 1; 
+            visibility: visible; 
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: indigo;
+        }
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+    <nav>
+        <div class="dropdown">
+            <a href="javascript:void(0)">Menu</a>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="html.html">About Us</a>
+                <a href="html1.html">Academics</a>
+                <a href="html2.html">Admissions</a>
+                <a href="html3.html">Student Life</a>
+                <a href="html4.html">Gallery</a>
+                <a href="html5.html">IT & Computer Studies</a>
+                <a href="html6.html">Ideal Students</a>
+                <a href="html7.html">Resources</a>
+                <a href="html8.html">News & Updates</a>
+                <a href="html9.html">Social Media</a>
+                <a href="html10.html">Contact Us</a>
+            </div>
+    </nav>
+
+</style>
+<body>
+   <center>
+    <header>
+        <h1>About Us</h1>
+        <p>Welcome to Shramik +2 High School Sirka</p>
+        
+    </header>
+    <section class="mission">
+        <h2>About us</h2>
+        <p>Welcome to Shramik +2 High School Sirka, a place where education meets excellence. Established in [Year], our school has been a cornerstone of quality education and holistic development in the community. We are dedicated to nurturing young minds and fostering an environment that encourages academic excellence, personal growth, and social responsibility.</p>
+    </section>
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>At Shramik +2 High School Sirka, our mission is to provide a comprehensive education that empowers students to achieve their full potential. We strive to cultivate a learning environment that is inclusive, innovative, and inspiring, where students are encouraged to explore, create, and grow. To provide quality education and foster the holistic development of our students.</p>
+    </section>
+    <section class="history">
+        <h2>Our History</h2>
+        <p>Founded in [Year], Shramik +2 High School Sirka has a rich history of academic achievements and community involvement. Over the years, we have grown from a small institution to a reputed educational center known for its dedicated faculty, diverse curriculum, and commitment to student success. Our alumni have gone on to excel in various fields, making significant contributions to society. Shramik +2 High School Sirka was established in [Year]. Over the years, we have grown to become a reputed institution in our region.</p>
+    </section>
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="amanat1.jpg" alt="developer">
+            <h3>Amanat ali</h3>
+            <p>Web developer</p>
+        </div>
+        <div class="team-member">
+            <img src="rohan.jpg" alt="css designer">
+            <h3>Rohan kumar</h3>
+            <p>css designer</p>
+        </div>
+        <div class="team-member">
+            <img src="devendra.jpg" alt="idea provider">
+            <h3>Devendra kumar</h3>
+            <p>Idea provider</p>
+        </div>
+        <!-- Add more team members as needed -->
+    </section>
+
+   </center>
+    <script>
+        window.onload = function() {
+            alert("Welcome to Shramik +2 High School! We're glad to have you here.");
+        };
+
+        // Modal functionality
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("infoButton");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

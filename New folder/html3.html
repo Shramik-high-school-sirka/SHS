@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life - SHRAMIK +2 HIGH SCHOOL SIRKA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('th.jpg'); /* Update the path as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color:;
+    color: #aa5959;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background: url('') no-repeat center center/cover;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.container {
+    background: url('j.jpg') no-repeat center center/cover;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.activities {
+    background: url('j.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.activity {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.activity img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.activity h3 {
+    margin-top: 10px;
+}
+
+.testimonials-section {
+    background: url('m.jpg') no-repeat center center/cover;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #05aa49;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+nav {
+            background-color: rgba(25, 25, 112, 0.9);
+            padding: 10px;
+            position: absolute; /* Positioning it in the top left corner */
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            border-radius: 5px;
+            z-index: 1000; /* Keep on top */
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(40, 106, 163);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+            white-space: nowrap;
+            width: 200px; 
+            opacity: 0; 
+            transition: opacity 0.3s ease, visibility 0.3s ease; 
+            visibility: hidden; 
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: lightgray;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block; 
+            opacity: 1; 
+            visibility: visible; 
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: indigo;
+        }
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+        .close {
+            color: #c37c7c;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <a href="javascript:void(0)">Menu</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="html.html">About Us</a>
+                    <a href="html1.html">Academics</a>
+                    <a href="html2.html">Admissions</a>
+                    <a href="html3.html">Student Life</a>
+                    <a href="html4.html">Gallery</a>
+                    <a href="html5.html">IT & Computer Studies</a>
+                    <a href="html6.html">Ideal Students</a>
+                    <a href="html7.html">Resources</a>
+                    <a href="html8.html">News & Updates</a>
+                    <a href="html9.html">Social Media</a>
+                    <a href="html10.html">Contact Us</a>
+                </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Experience Vibrant Student Life</h1>
+            <p>Discover a world of opportunities and activities.</p>
+        </div>
+    </section>
+
+    <section id="student-life-info" class="container">
+        <h2>Welcome to Student Life</h2>
+        <p>At our school, we believe in fostering a vibrant student community through various activities, clubs, and events. Here’s what you can look forward to:</p>
+        
+        <div class="activities">
+            <div class="activity">
+                <img src="path/to/image1.jpg" alt="Sports">
+                <h3>Sports</h3>
+                <p>Join our various sports teams and stay active. We offer basketball, soccer, tennis, and more.</p>
+            </div>
+            <div class="activity">
+                <img src="path/to/image2.jpg" alt="Clubs">
+                <h3>Clubs</h3>
+                <p>We have a wide range of clubs including robotics, drama, music, and debate. There’s something for everyone!</p>
+            </div>
+            <div class="activity">
+                <img src="path/to/image3.jpg" alt="Events">
+                <h3>Events</h3>
+                <p>From cultural festivals to academic competitions, our events are designed to enrich your experience.</p>
+            </div>
+            <div class="activity">
+                <img src="path/to/image4.jpg" alt="Volunteer">
+                <h3>Volunteer Opportunities</h3>
+                <p>Give back to the community through our various volunteer programs and make a difference.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial">
+            <p>"Joining the basketball team was the best decision I made. It helped me make friends and stay fit."</p>
+            <p>- Alex, Grade 10</p>
+        </div>
+        <div class="testimonial">
+            <p>"The drama club gave me a platform to express myself creatively. I loved every moment!"</p>
+            <p>- Emily, Grade 11</p>
+        </div>
+        <div class="testimonial">
+            <p>"Volunteering at the local shelter opened my eyes to the importance of community service."</p>
+            <p>- Michael, Grade 12</p>
+        </div>
+    </section>
+    <script>
+        window.onload = function() {
+            alert("Welcome to Shramik +2 High School! We're glad to have you here.");
+        };
+
+        // Modal functionality
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("infoButton");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Your School Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
